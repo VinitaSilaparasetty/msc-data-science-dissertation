@@ -18,7 +18,7 @@ st.markdown("<h3 style='text-align: center; color: teal;'> Msc Data Science </h1
 
 st.markdown("<h3 style='text-align: center; color: teal;'> Newcastle University </h1>", unsafe_allow_html=True)
 
-st.write("This is a prototype for an application to aid in the contactless diagnoses of skin cancer.")
+st.write("This is a prototype for an application to aid in the diagnoses of skin cancer.")
 
 model_path = './models/'
 
