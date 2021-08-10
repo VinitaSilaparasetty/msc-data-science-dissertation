@@ -20,6 +20,7 @@ st.markdown("<h3 style='text-align: center; color: teal;'> Newcastle University 
 
 st.write("This is a prototype for an application to aid in the contactless diagnoses of skin cancer.")
 
+model_path = './models/'
 
 def data_gen(x):
     img = np.asarray(Image.open(x).resize((28, 28)))
@@ -46,7 +47,7 @@ def data_gen_(img):
 
 def load_models():
 
-    model = load_model(./skincancer_98.h5)
+    model = load_model(model_path + 'skincancer_98.h5')
     return model
 
 
