@@ -69,7 +69,7 @@ def load_models():
 		url = 'https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5'
 		filename = url.split('/')[-1]
 		f_checkpoint=urllib.request.urlretrieve(url, filename)
-	model = load_model(f_checkpoint)
+	model = tf.keras.models.load_model(f_checkpoint)
 	return model
 
 
