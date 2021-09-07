@@ -64,10 +64,10 @@ def data_gen_(img):
 
 
 def load_models():
-    with st.spinner("Downloading model... this may take awhile!"):
-	download_file_from_google_drive('/content/drive/MyDrive/fitz_model_weights/skincancer_98.h5')
-    model = load_model('skincancer_98.h5')
-    return model
+	with st.spinner("Downloading model... this may take awhile!"):
+		download_file_from_google_drive('/content/drive/MyDrive/fitz_model_weights/skincancer_98.h5')
+	model = load_model('skincancer_98.h5')
+	return model
 
 
 
