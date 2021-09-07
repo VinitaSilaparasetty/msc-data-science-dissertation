@@ -69,7 +69,7 @@ def load_models():
 		url = 'https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5'
 		filename = url.split('/')[-1]
 		urllib.request.urlretrieve(url, filename)
-	model = load_model('skincancer_98.h5')
+	model = load_model(filename)
 	return model
 
 
