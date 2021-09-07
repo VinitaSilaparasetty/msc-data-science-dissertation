@@ -72,7 +72,7 @@ def load_models():
 		#urllib.request.urlretrieve(url, filename)
 		save_dest = Path('models')
 		save_dest.mkdir(exist_ok=True)
-		f_checkpoint = Path("models/skincancer_98.h5")
+		f_checkpoint = Path('models/skincancer_98.h5')
 		if not f_checkpoint.exists():
 			download_file_from_google_drive("https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5", f_checkpoint)
 	model = tensorflow.keras.models.load_model("skincancer_98.h5")
