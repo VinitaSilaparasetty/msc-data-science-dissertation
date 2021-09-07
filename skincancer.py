@@ -66,10 +66,10 @@ def data_gen_(img):
 
 
 def load_models():
-	#with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
-		#url = 'https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5'
-		#filename = url.split('/')[-1]
-		#f_checkpoint=urllib.request.urlretrieve(url, filename)
+	with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
+		url = 'https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5'
+		filename = url.split('/')[-1]
+		urllib.request.urlretrieve(url, filename)
 	model = tensorflow.keras.models.load_model("skincancer_98.h5")
 	return model
 
