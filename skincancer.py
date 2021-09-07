@@ -67,7 +67,7 @@ def load_models():
 	f_checkpoint = Path("models/skincancer_98.h5")
 	with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
             from GD_download import download_file_from_google_drive
-            download_file_from_google_drive(f_checkpoint,"skincancer_98.h5")
+            download_file_from_google_drive("https://drive.google.com/file/d/1fs3SMhq5uJ4y2TsgIKk8EnljuBMQi0cK/view?usp=sharing",f_checkpoint)
 	model = load_model('skincancer_98.h5')
 	return model
 
