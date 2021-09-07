@@ -9,6 +9,7 @@ from keras import backend as K
 import time
 import io
 from PIL import Image
+from pathlib import Path
 
 st.markdown("<h1 style='text-align: center; color: teal;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
 
