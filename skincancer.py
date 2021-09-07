@@ -10,6 +10,7 @@ import time
 import io
 from PIL import Image
 from pathlib import Path
+import urllib.request
 
 st.markdown("<h1 style='text-align: center; color: teal;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
 
@@ -64,10 +65,10 @@ def data_gen_(img):
 
 
 def load_models():
-	f_checkpoint = Path("models/skincancer_98.h5")
 	with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
-            from GD_download import download_file_from_google_drive
-            download_file_from_google_drive("https://drive.google.com/file/d/1fs3SMhq5uJ4y2TsgIKk8EnljuBMQi0cK/view?usp=sharing",f_checkpoint)
+		url = 'https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5'
+		filename = url.split('/')[-1]
+		urllib.request.urlretrieve(url, filename)
 	model = load_model('skincancer_98.h5')
 	return model
 
