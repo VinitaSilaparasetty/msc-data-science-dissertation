@@ -9,7 +9,6 @@ from keras import backend as K
 import time
 import io
 from PIL import Image
-from GD_download import download_file_from_google_drive
 
 st.markdown("<h1 style='text-align: center; color: teal;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
 
