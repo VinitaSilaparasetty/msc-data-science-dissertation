@@ -68,8 +68,8 @@ def load_models():
 	with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
 		url = 'https://github.com/VinitaSilaparasetty/dissertation/releases/download/maiden/skincancer_98.h5'
 		filename = url.split('/')[-1]
-		model=urllib.request.urlretrieve(url, filename)
-	#model = load_model(filename)
+		f_checkpoint=urllib.request.urlretrieve(url, filename)
+	model = load_model(f_checkpoint)
 	return model
 
 
