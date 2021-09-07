@@ -2,7 +2,7 @@
 import requests
 
 def download_file_from_google_drive(id, destination):
-    URL = "/content/drive/MyDrive/fitz_model_weights/skincancer_98.h5"
+    URL = "https://drive.google.com/file/d/1fs3SMhq5uJ4y2TsgIKk8EnljuBMQi0cK/view?usp=sharing"
 
     session = requests.Session()
 
