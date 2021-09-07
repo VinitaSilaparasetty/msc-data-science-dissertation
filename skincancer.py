@@ -63,7 +63,7 @@ def data_gen_(img):
 
 
 def load_models():
-	model = load_model(models/skincancer_98.h5)
+	model = load_model(skincancer_98.h5)
 	return model
 
 
