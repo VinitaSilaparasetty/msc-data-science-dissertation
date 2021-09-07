@@ -9,6 +9,7 @@ from keras import backend as K
 import time
 import io
 from PIL import Image
+from GD_download import download_file_from_google_drive
 
 st.markdown("<h1 style='text-align: center; color: teal;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
 
@@ -63,7 +64,8 @@ def data_gen_(img):
 
 
 def load_models():
-
+    with st.spinner("Downloading model... this may take awhile!"):
+	download_file_from_google_drive('/content/drive/MyDrive/fitz_model_weights/skincancer_98.h5')
     model = load_model('skincancer_98.h5')
     return model
 
