@@ -11,7 +11,7 @@ To use artificial intelligence to develop a smart skin imaging application that 
 
 * To develop a skin imaging software application for the diagnosis of cancerous skin lesions with a validation accuracy of at least 85\% .
 
-* To develop a skin imaging software application that will efficiently categorize the Fitzpatrick skin phototype of individuals from all ethnic groups. Understanding the phototype of the patient is helpful, but it is not as life threatening if the classification is wrong. Hence for a prototype, 75\% accuracy is ideal. This
+* To develop a skin imaging software application that will efficiently categorize the Fitzpatrick skin phototype of individuals from all ethnic groups. Understanding the phototype of the patient is helpful, but it is not as life threatening if the classification is wrong. Hence for a prototype, 75\% accuracy is ideal.
 
 ### Instructions to run prototype: 
 
