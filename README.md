@@ -1,7 +1,7 @@
 # Artificial Intelligence Augmented Skin Imaging using Computer Vision and Convolutional Neural Networks
 Prototype for software application to promote contactless diagnosis of skin cancer.
 
-![poster](https://github.com/VinitaSilaparasetty/msc-data-science-dissertation/blob/main/dissertation_poster%20(1).pdf)
+![](https://github.com/VinitaSilaparasetty/msc-data-science-dissertation/blob/main/dissertation_poster%20(1).pdf)
 
 ### Aim:
 
