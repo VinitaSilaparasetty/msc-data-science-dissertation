@@ -14,11 +14,11 @@ import urllib.request
 import tensorflow
 #from tensorflow.python.keras.utils import to_categorical
 
-st.markdown("<h1 style='text-align: center; color: teal;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
 
-st.markdown("<h3 style='text-align: center; color: teal;'> By Vinita Silaparasetty</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: white;'> By Vinita Silaparasetty</h3>", unsafe_allow_html=True)
 
-st.markdown("<h3 style='text-align: center; color: teal;'> Msc Data Science at Newcastle University</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: white;'> Msc Data Science at Newcastle University</h3>", unsafe_allow_html=True)
 
 st.sidebar.header("Patient Details")
 
@@ -93,7 +93,7 @@ def predict(x_test, model):
     return y_new, Y_pred_classes
 
 
-st.markdown("<h3 style='text-align: left; color: white;'>Upload Image of Problem Area</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: left; color: white;'>Upload Image of Problem Area</h1>")
 
 file_path = st.file_uploader('Upload an image', type=['png', 'jpg','jpeg'])
 if file_path is not None:
