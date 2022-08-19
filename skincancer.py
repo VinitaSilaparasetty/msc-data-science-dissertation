@@ -93,7 +93,7 @@ def predict(x_test, model):
     return y_new, Y_pred_classes
 
 
-st.markdown("<h3 style='text-align: left; color: black;'>Upload Image of Problem Area</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: left; color: white;'>Upload Image of Problem Area</h1>", unsafe_allow_html=True)
 
 file_path = st.file_uploader('Upload an image', type=['png', 'jpg','jpeg'])
 if file_path is not None:
