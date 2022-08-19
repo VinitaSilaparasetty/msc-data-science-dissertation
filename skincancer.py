@@ -20,6 +20,8 @@ st.markdown("<h3 style='text-align: center; color: white;'> By Vinita Silaparase
 
 st.markdown("<h3 style='text-align: center; color: white;'> Msc Data Science at Newcastle University</h3>", unsafe_allow_html=True)
 
+st.markdown("<h3 style='text-align: left; color: white;'> Upload Image of Problem Area</h3>", unsafe_allow_html=True)
+
 st.sidebar.header("Patient Details")
 
 patient_id = st.sidebar.text_input( "Patient ID:", '#')
@@ -93,7 +95,7 @@ def predict(x_test, model):
     return y_new, Y_pred_classes
 
 
-st.markdown("<h1 style='text-align: left; color: white;'>Upload Image of Problem Area</h1>")
+
 
 file_path = st.file_uploader('Upload an image', type=['png', 'jpg','jpeg'])
 if file_path is not None:
@@ -129,4 +131,3 @@ if file_path is not None:
             
 else:
             st.info('Kindly Upload an Image')
-                    
