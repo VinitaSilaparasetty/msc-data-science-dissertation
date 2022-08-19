@@ -1,17 +1,18 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import keras
-from keras.utils.np_utils import to_categorical
-from keras.models import Sequential, load_model
+#import keras
+#from tensorflow.keras.utils.np_utils import to_categorical
+from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Conv2D, Flatten, Dense, MaxPool2D
-from keras import backend as K
+from tensorflow.keras import backend as K
 import time
 import io
 from PIL import Image
 from pathlib import Path
 import urllib.request
 import tensorflow
+#from tensorflow.python.keras.utils import to_categorical
 
 st.markdown("<h1 style='text-align: center; color: teal;'>Artificial Intelligence Augmented Skin Imaging using Computer Vision and Neural Networks</h1>", unsafe_allow_html=True)
 
