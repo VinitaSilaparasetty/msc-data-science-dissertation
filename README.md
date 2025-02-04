@@ -13,6 +13,11 @@ To use artificial intelligence to develop a smart skin imaging application that 
 
 * To develop a skin imaging software application that will efficiently categorize the Fitzpatrick skin phototype of individuals from all ethnic groups. Understanding the phototype of the patient is helpful, but it is not as life threatening if the classification is wrong. Hence for a prototype, 75\% accuracy is ideal.
 
+### Additional Details
+* Used Python's imblearn package for random under-sampling to balance the dataset. 
+* Used Python's Matplotlib and Seaboard to generate visuals for better data understanding. 
+* Used Python's Scikit - Learn to perform K-means to detect and cluster the colored pixels in an image. The elbow method was used to select the ideal number of clusters. The RGB values of each unique color within the image were converted to hex values. Finally,the Fitzpatrick type was determined using the hex values for skin tones in each Fitzpatrick type. 
+
 ### Instructions to run prototype: 
 
 * Ensure that the file 'skincancer.py' and the keras model file 'skincancer_98.h5' are in the same working directory as your streamlit installation.
@@ -20,4 +25,3 @@ To use artificial intelligence to develop a smart skin imaging application that 
 * In the terminal type the command 'streamlit run skincancer.py'
 
 * A new tab will open in your browser with the application gui.
-
