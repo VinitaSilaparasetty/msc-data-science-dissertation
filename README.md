@@ -16,7 +16,11 @@ To use artificial intelligence to develop a smart skin imaging application that 
 ### Additional Details
 * Used Python's imblearn package for random under-sampling to balance the dataset. 
 * Used Python's Matplotlib and Seaboard to generate visuals for better data understanding. 
-* Used Python's Scikit - Learn to perform K-means to detect and cluster the colored pixels in an image. The elbow method was used to select the ideal number of clusters. The RGB values of each unique color within the image were converted to hex values. Finally,the Fitzpatrick type was determined using the hex values for skin tones in each Fitzpatrick type. 
+* Used Python's Scikit - Learn to perform K-means to detect and cluster the colored pixels in an image. The elbow method was used to select the ideal number of clusters. The RGB values of each unique color within the image were converted to hex values. Finally,the Fitzpatrick type was determined using the hex values for skin tones in each Fitzpatrick type.
+* Used Python's OpenCV for skin segmentation by using the RGB values of skin tones to set the upper and lower boundaries for each Fitzpatrick skin phototype. Then, bounding boxes were defined to the regions of the image containing skin tone pixels. 
+* A custome CNN was developed using Tensorflow and Keras to categorize skin tones into their Fitzpatrick types using ethnicity. 
+* A custom CNN was developed using Tensorflow and Keras to predict if a patient has cancer, and if they do, it gives the exact type of cancer as the output. 
+  
 
 ### Instructions to run prototype: 
 
