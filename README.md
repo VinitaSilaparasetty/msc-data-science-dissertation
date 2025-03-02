@@ -3,7 +3,7 @@ Prototype for software application to promote contactless diagnosis of skin canc
 
 ### Aim:
 
-To use artificial intelligence to develop a smart skin imaging application that understands the skin’s reaction to the sun by categorizing it into it’s Fitzpatrick phototype and subsequently for the automatic, contactless diagnosis of skin cancer using low resolution images of skin lesions taken with a mobile device.
+To use artificial intelligence to develop a smart skin imaging application that understands the skin’s reaction to the sun by categorizing it into it’s Fitzpatrick phototype and subsequently for the automatic, contactless diagnosis of skin cancer even with low resolution images of skin lesions taken with a mobile device.
 
 ### Objectives:
 
